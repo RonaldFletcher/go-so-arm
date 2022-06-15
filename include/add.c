@@ -12,4 +12,4 @@ char* Add(char* src, int n)
      return result;
 }
 
-// gcc -fPIC -shared -o lib/libadd.so add.c
+// arm-linux-gnueabi-gcc  -fPIC -shared -o lib/libadd.so ./include/add.c

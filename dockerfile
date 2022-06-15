@@ -1,4 +1,4 @@
-FROM golang:1.16
+FROM  --platform=linux/arm64/v8 golang:1.17.11-stretch
 
 ENV CGO_ENABLED=1
 ENV GOPROXY=https://goproxy.cn,direct
