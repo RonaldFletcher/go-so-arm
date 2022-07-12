@@ -11,6 +11,6 @@ import "C"
 import "fmt"
 
 func main() {
-	val := C.Add(C.CString("go"), 2022)
+	val := C.Add(C.CString("go111"), 2022)
 	fmt.Println("run c: ", C.GoString(val))
 }
