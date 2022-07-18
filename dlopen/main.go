@@ -25,6 +25,7 @@ func TwoSum(a, b int) (int, error) {
 	if err != nil {
 		return 0, errors.New(fmt.Sprintf("TwoSumCall return %v, err: %v", result, err))
 	}
+	defer C.dlclose(handler)
 	return int(result), nil
 
 }
